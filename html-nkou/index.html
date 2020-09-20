@@ -5,35 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="N高等学校（通信制高校）は、IT×グローバル社会を生き抜く「想像力」を身につけ、世界で活躍する人を育成します。N高の教育方針とネットの高校だからこそ学べる魅力を紹介します。">
   <title>N校について|N高等学校(通信制高校広域・単位制)</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="header-top">
-        <div class="header-top-wrapper">
-          <h2>KADOKAWAが創る新しいネットの学校</h2>
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="header-top-wrapper">
+            <h2>KADOKAWAが創る新しいネットの学校</h2>
+            <ul>
+              <li><a href="#">入学案内</a></li>
+              <li><a href="#">キャンパス</a></li>
+              <li><a href="#">ニュース</a></li>
+              <li><a href="#">ブログ</a></li>
+              <li><a href="#">WEB出願</a></li>
+              <li><a href="#">卒業された方へ</a></li>
+              <li><a href="#">生徒用ログイン</a></li><!-- CSSでbackground実装 -->
+            </ul>
+          </div>
+        </div>
+        <div class="header-main">
+          <p class="small-img" ><a href="#"><img src="images/header_mainlogo_sp01.png" alt="N校メインロゴ"></a></p>
+          <p class="big-img"><a href="#"><img src="images/header_mainlogo_pc01.png" height="45" width="211" alt="N校メインロゴ"></a></p>
           <ul>
-            <li><a href="#">入学案内</a></li>
-            <li><a href="#">キャンパス</a></li>
-            <li><a href="#">ニュース</a></li>
-            <li><a href="#">ブログ</a></li>
-            <li><a href="#">WEB出願</a></li>
-            <li><a href="#">卒業された方へ</a></li>
-            <li><a href="#">生徒用ログイン</a></li><!-- CSSでbackground実装 -->
+            <li>
+              <img src="images/header_tel03.png" alt="電話番号">
+              <p>受付時間：平日10:00～19:00</p>
+            </li>
+            <li><a href="#"><img src="images/header_social01_01.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="images/header_social01_02.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="images/header_social01_03.png" alt="YouTube"></a></li>
           </ul>
         </div>
       </div>
-      <div class="header-main">
-        <p><a href="#"><img src="images/header_mainlogo_pc01.png" height="45" width="211" alt="N校メインロゴ"></a></p>
-        <ul>
-          <li>
-            <img src="images/header_tel03.png" alt="電話番号">
-            <p>受付時間：平日10:00～19:00</p>
-          </li>
-          <li><a href="#"><img src="images/header_social01_01.png" alt="facebook"></a></li>
-          <li><a href="#"><img src="images/header_social01_02.png" alt="twitter"></a></li>
-          <li><a href="#"><img src="images/header_social01_03.png" alt="YouTube"></a></li>
-        </ul>
+      <div class="menu">
+        <div class="menu-wrapper">
+          <p class="big-img"><a href="#"><img src="images/header_mainlogo_pc01.png" height="45" width="211" alt="N校メインロゴ"></a></p>
+
+          <ul class="request">
+            <li>
+              <img src="images/header_tel03.png" alt="電話番号">
+              <p>受付時間<br>平日10:00～19:00</p>
+            </li>
+            <li><a href="#">説明会・相談会</a></li>
+            <li><a href="#">資料請求</a></li>
+          </ul>
+        </div>
       </div>
       <nav>
         <div class="header-nav">
@@ -73,17 +92,19 @@
           </div><!-- local-nav-wrapper -->
         </div><!-- header-nav -->
       </nav>
-      <div class="key-visual">
-        <h1><!-- CSSでbackgroundのimgを挿入 -->
-          <span class="title">N高について<br></span><!-- CSSでbackgroundの下線を挿入 -->
-          <span class="about-school"><img src="images/about_maintitle_ruby01.png" alt="About School"></span>
-        </h1>
-      </div>
-      <div class="breadcrumb">
-        <ol>
-          <li><a href="#">N高等学校｜通信制高校(広域)・単位制</a></li>
-          <li>N高について</li>
-        </ol>
+      <div class="reverse">
+        <div class="key-visual">
+          <h1><!-- CSSでbackgroundのimgを挿入 -->
+            <span class="title">N高について<br></span><!-- CSSでbackgroundの下線を挿入 -->
+            <span class="about-school"><img src="images/about_maintitle_ruby01.png" alt="About School"></span>
+          </h1>
+        </div>
+        <div class="breadcrumb">
+          <ol>
+            <li><a href="#">N高等学校｜通信制高校(広域)・単位制</a></li>
+            <li>N高について</li>
+          </ol>
+        </div>
       </div>
     </div><!-- <header-inner> -->
   </header>
@@ -101,11 +122,13 @@
       <section class="policy">
         <h2><span>教育方針</span></h2><!-- CSSでbackgroundの下線を挿入 -->
         <div class="explanation">
-          <h3>教養<span>自分なりの考えをもつための知識</span></h3>
-          <h3>思考力<span>知識を使って考える力</span></h3>
-          <h3>実践力<span>考えを行動に移す力</span></h3>
+          <p><img class="pyramid" src="images/about_img00_01.png" alt="図"></p>
+          <div class="policy-explanation">
+            <h3 class="space">教養<span class="education">自分なりの考えをもつための知識</span></h3>
+            <h3>思考力<span class="thinking">知識を使って考える力</span></h3>
+            <h3>実践力<span class="practical">考えを行動に移す力</span></h3>
+          </div>
         </div>
-        <p><img src="images/about_img00_01.png" alt="図"></p>
         <div class="standard">
           <a href="#">
             <div class="standard-img">
@@ -122,34 +145,38 @@
       <section class="policy">
         <h2><span>N高の魅力</span></h2><!-- CSSでbackgroundの下線を挿入 -->
         <div class="explanation">
-          <h3>ネットの高校だから<br>
-          やりたい事に多くの時間が使える</h3>
-          <p>N高等学校は、インターネットと通信制高校の制度を活用した新しい高校です。そのため、高校卒業のための学習にかかる拘束時間を最小限にとどめる事ができます。だから自分が学びたい事に多くの時間を充てる事ができます。</p>
-          <p><span>Basic Program:高校卒業資格取得のための必要授業を<br>
-          Advanced Program:将来に繋がる豊富な選択授業</span></p>
+          <div class="policy-explanation">
+            <h3 class="strong">ネットの高校だから<br>
+            やりたい事に多くの時間が使える</h3>
+            <p>N高等学校は、インターネットと通信制高校の制度を活用した新しい高校です。そのため、高校卒業のための学習にかかる拘束時間を最小限にとどめる事ができます。だから自分が学びたい事に多くの時間を充てる事ができます。</p>
+            <p><span class="addition">Basic Program:高校卒業資格取得のための必要授業を<br>
+            Advanced Program:将来に繋がる豊富な選択授業</span></p>
+          </div>
+          <p><img src="images/about_img02_01_20170927.png" alt="図"></p>
         </div>
-        <p><img src="images/about_img02_01_20170927.png" alt="図"></p>
         <div class="explanation">
-          <h3>増えた時間で<br>
-          将来へ繋がる多くの経験ができる</h3>
-          <p>N高では将来へ繋がるオリジナル授業であるAdvanced Program（アドバンスド プログラム）を数多く用意しております。多くの経験からやりたい事を見つけましょう。</p>
+          <div class="policy-explanation">
+            <h3 class="strong">増えた時間で<br>
+            将来へ繋がる多くの経験ができる</h3>
+            <p>N高では将来へ繋がるオリジナル授業であるAdvanced Program（アドバンスド プログラム）を数多く用意しております。多くの経験からやりたい事を見つけましょう。</p>
+          </div>
+          <p><img src="images/about_img02_02.png" alt="図"></p>
         </div>
-        <p><img src="images/about_img02_02.png" alt="図"></p>
       </section><!-- policy -->
     </div>
     <div class="program-block">
       <section class="program-contents">
         <div class="program-container">
-          <h2>高校資格取得のためのBasic Program</h2><!-- CSSで下線実装 -->
-          <p>ネットと通信制高校の制度を利用して、<br>
+          <h2>高校資格取得のための<span class="br">Basic Program</span></h2><!-- CSSで下線実装 -->
+          <p class="sub-title">ネットと通信制高校の制度を利用して、<br>
           一般的な全日制高校と比べ短い拘束時間で高校卒業資格を得ることが可能です。</p>
           <div class="program-wrapper">
-            <div class="left-part">
+            <div class="left-part-img">
               <img src="images/about_img03_01.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_basic_program01_white01.png" alt="ベーシックプログラム"></p><!-- background:#000; -->
+                <p class="basic-tag"><img src="images/text_basic_program01_white01.png" alt="ベーシックプログラム"></p><!-- background:#000; -->
                 <h3>高校卒業資格を<br>
                 取得するための授業は<br>
                 スマホ・パソコンで。</h3>
@@ -158,12 +185,14 @@
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="right-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="right-part-img">
               <img src="images/about_img03_02.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_basic_program01_white01.png" alt="ベーシックプログラム"></p><!-- background:#000-->
+                <p class="basic-tag"><img src="images/text_basic_program01_white01.png" alt="ベーシックプログラム"></p><!-- background:#000-->
                 <h3>学校に通うのは<br>
                 年5日間程度<span>※</span>の<br>
                 スクリーニングだけ。</h3>
@@ -178,15 +207,15 @@
       <section class="program-contents">
         <div class="program-container">
           <h2>プロフェッショナルによる将来へ繋がるAdvanced Program</h2><!-- CSSで下線実装 -->
-          <p>Advanced Program（アドバンスド　プログラム）とは、<br>
+          <p class="sub-title">Advanced Program（アドバンスド　プログラム）とは、<br>
             任意で受講する選択式授業です。</p>
           <div class="program-wrapper">
-            <div class="left-part">
+            <div class="left-part-img">
               <img src="images/about_img04_01.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
                 <h3>N校生なら<br>
                 学校の授業とは別に<br>
                 無料で学べる<br>
@@ -195,12 +224,14 @@
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="right-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="right-part-img">
               <img src="images/about_img04_02.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
                 <h3>実力派予備校講師<br>
                 による合格のための<br>
                 大学受験対策授業。</h3>
@@ -210,12 +241,12 @@
             </div>
           </div><!-- program-wrapper -->
           <div class="program-wrapper">
-            <div class="left-part">
+            <div class="left-part-img">
               <img src="images/about_img04_03.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
                 <h3>ドワンゴの<br>
                   トップエンジニアが<br>
                 教える、実践的な<br>
@@ -224,27 +255,31 @@
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="right-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="right-part-img">
               <img src="images/about_img04_04.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
                 <h3>小説、漫画、イラスト、<br>
                 ファッション、<br>
                 パティシエなど専門的な<br>
                 授業も盛りだくさん。。</h3>
                 <p>夢の授業を学ぶ。夢を見つける為に、様々な仕事に触れる。多くの専門的な職業のアドバンスプログラムを通じて、自らの将来を描くことができます。</p>
-                  <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
-                </a>
+                <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
+              </a>
             </div>
-            <div class="left-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="left-part-left">
               <img src="images/about_img04_05.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
-                <h3>日本各地の職業を<br>
+                  <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
+                  <h3>日本各地の職業を<br>
                 リアルで体験。<br>
                 高校時代から社会と<br>
                 関わる職業体験。</h3>
@@ -252,25 +287,29 @@
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="right-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="right-part-img">
               <img src="images/about_img04_06.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000-->
                 <h3>世界の最先端を学ぶ<br>
-                国際教養プログラム。</h3>
+                  国際教養プログラム。</h3>
                 <p>海外大学　国際教養プログラム<br>
-                国際的な生徒育成を目的とするN高等学校では世界の提携校のプログラムに参加する生徒を毎年募集しています。</p>
+                    国際的な生徒育成を目的とするN高等学校では世界の提携校のプログラムに参加する生徒を毎年募集しています。</p>
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="left-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="left-part-img">
               <img src="images/about_img04_07.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
-                <p class="tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
+                <p class="advanced-tag"><img src="images/text_advanced_program01_white01.png" alt="アドバンスドプログラム"></p><!-- background:#000; -->
                 <h3>中学までの<br>
                 学校範囲を学び直す<br>
                 中学校復習授業。</h3>
@@ -283,12 +322,13 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>先端企業が利用するITツールを高校時代から利用</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">先端企業が利用する
+            <span class="br">ITツールを高校時代から利用</span></h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="right-part">
+            <div class="right-part-img">
               <img src="images/about_img05_01.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
                 <h3>slack、GitHub、<br>
                 G Suite for Education<br>
@@ -305,12 +345,13 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>学校行事はネットとリアルで</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">学校行事は
+            <span class="br">ネットとリアルで</span></h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="left-part">
+            <div class="left-part-img">
               <img src="images/about_img06_01.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
                 <h3>仲間と一緒に高校生活を楽しむための<br>
                 ネット＆リアルイベントが盛りだくさん。<br>
@@ -324,12 +365,12 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>N高起業部</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">N高起業部</h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="right-part">
+            <div class="right-part-img">
               <img src="images/about_img10.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
                 <h3>高校生だから起業する。</h3>
                 <p>年間の法人起業件数は約5万社。もはや、起業は選択肢のひとつ。N高は学生が起業家を目指すことで、イノベーティブな考え方を学び、日本や世界を支える人材を育成するため、起業部を立ち上げます。</p>
@@ -341,12 +382,13 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>全国の仲間とともに活動する部活動</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">全国の仲間とともに
+            <span class="br">活動する部活動</span></h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="left-part">
+            <div class="left-part-img">
               <img src="images/about_img07_01.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
                 <h3>部活を通じて<br>
                 仲間と出会い成長する。<br>
@@ -360,12 +402,13 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>ネットの高校は2つの入学コースが選べます</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">ネットの高校は
+            <span class="br">2つの入学コースが選べます</span></h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="right-part">
+            <div class="right-part-img">
               <img src="images/about_img08_01.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
                 <h3>ネットの高校だから<br>
                 全国各地から<br>
@@ -375,10 +418,12 @@
                 <p><img src="images/text_read_more01_black01.png" height="14" width="75" alt="もっと読む"></p>
               </a>
             </div>
-            <div class="left-part">
+          </div><!-- program-wrapper -->
+          <div class="program-wrapper">
+            <div class="left-part-img">
               <img src="images/about_img08_02.jpg" alt="写真">
             </div>
-            <div class="right-part">
+            <div class="right-part-text">
               <a href="#">
                 <h3>ネットの高校の<br>
                 強みを生かした<br>
@@ -394,12 +439,13 @@
       </section><!-- program-contents -->
       <section class="program-contents">
         <div class="program-container">
-          <h2>より目的に特化したN高との連携スクール</h2><!-- CSSで下線実装 -->
+          <h2 class="efforts-title">より目的に特化した
+            <span class="br">N高との連携スクール</span></h2><!-- CSSで下線実装 -->
           <div class="program-wrapper">
-            <div class="right-part">
+            <div class="right-part-img">
               <img src="images/about_img09_04.jpg" alt="写真">
             </div>
-            <div class="left-part">
+            <div class="left-part-text">
               <a href="#">
                 <h3>将来を考え、<br>
                 夢や目標にい直線な<br>
@@ -425,7 +471,7 @@
         <ul>
           <li><a href="#">
             <span class="title">N高生からのメッセージ</span>
-            <span class="sub-title">私達がN高を選んだ理由</span>
+            <span class="sub-title">私達がN高を選んだ理由。</span>
           </a></li>
           <li><a href="#">
             <span class="title">学校関係者・著名人からのメッセージ</span>
@@ -444,15 +490,17 @@
     </div><!-- message -->
     <div class="more">
       <div class="more-inner">
-        <h3>N高についてさらに知りたい方はこちら</h3>
+        <h3>N高についてさらに詳細を<span class="br">知りたい方はこちら</span></h3>
         <div class="more-wrapper">
           <ul>
-            <li><a href="#">資料請求(無料)</a></li>
-            <li><a href="#">説明会・相談会</a></li>
+            <li><a href="#"><span class="book"></span>資料請求(無料)</a></li>
+            <li><a href="#"><span class="balloon"></span>説明会・相談会</a></li>
           </ul>
-          <p><a href="#"><img src="images/footer02_tel01.png" alt="電話番号"></a>
-          <span>受付時間 平日10:00～19:00</span></p>
-          <p><a href="#">WEBからのお問合わせ</a></p>
+          <div class="contact-link">
+            <p><a href="#"><img src="images/footer02_tel01.png" alt="電話番号"></a>
+            <span>受付時間 平日10:00～19:00</span></p>
+            <p class="contact"><a href="#">WEBからのお問合わせ</a></p>
+          </div>
         </div><!-- more-wrapper -->
       </div><!-- more-inner -->
     </div>
@@ -464,12 +512,12 @@
             <li><a href="#">N高ブログ</a></li>
           </ul>
         </div>
-          <p>学校法人角川ドワンゴ学園は、N高等学校以外にもさまざまな学びの場を提供しています。</p>
-          <ul>
+          <p>学校法人角川ドワンゴ学園は、<span class="br">N高等学校以外にも</span><span class="br">さまざまな学びの場を提供しています。</span></p>
+          <ul class="others">
             <li><a href="#"><img src="images/footer05_Njr.png" alt="N中等部">
-            <span>社会で求められる能力を身につけるプログレッシブスクール</span></a></li>
+            <span>社会で求められる能力を身につける<span class="br">プログレッシブスクール</span></span></a></li>
             <li><a href="#"><img src="images/footer05_nlabo.png" alt="N Code Labo">
-            <span>N高のプログラミング教育を小学生・中学生・高校生が学ぶ教室</span></a></li>
+            <span>N高のプログラミング教育を<span class="br">小学生・中学生・高校生が学ぶ教室</span></span></a></li>
           </ul>
       </div><!-- links-inner -->
     </div><!-- links -->
@@ -477,131 +525,135 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-container">
-        <ul>
-          <li><a href="#">トップ</a></li>
-          <li><a href="#">中3生・新入生の方</a></li>
-          <li><a href="#">転入生の方</a></li>
-          <li><a href="#">編入生の方</a></li>
-          <li><a href="#">保護者・教育関係の方</a></li>
-          <li><a href="#">海外在住の方</a></li>
-        </ul>
-        <p><a href="#"></a></p><!-- CSSでbackground -->
-        <div class="footer-column1">
-          <p><a href="#"><span class="ruby">アドバンスドプログラム</span><br>
-          Advanced Program</a></p>
-          <ul>
-            <li><a href="#">大学受験対策</a></li>
-            <li><a href="#">プログラミング</a></li>
-            <li><a href="#">クリエイティブ・エンタテインメント</a></li>
-            <li><a href="#">Vamtan FILIP CHANNEL</a></li>
-            <li><a href="#">WEBデザイン</a></li>
-            <li><a href="#">機械学習</a></li>
-            <li><a href="#">中学復習</a></li>
-            <li><a href="#">職業体験</a></li>
-            <li><a href="#">N高マイプロジェクト</a></li>
-            <li><a href="#">海外大学交際教養</a></li>
+        <div class="footer-top">
+          <ul class="target">
+            <li><a href="#">トップ</a></li>
+            <li><a href="#">中3生・新入生の方</a></li>
+            <li><a href="#">転入生の方</a></li>
+            <li><a href="#">編入生の方</a></li>
+            <li><a href="#">保護者・教育関係の方</a></li>
+            <li><a href="#">海外在住の方</a></li>
           </ul>
+          <p class="page-top"><a href="#"></a></p><!-- CSSでbackground -->
         </div>
-        <div class="footer-column2">
-          <p><a href="#">N高について</a></p>
-          <ul>
-            <li><a href="#">5分でわかるN高</a></li>
-            <li><a href="#">高校卒業資格取得について</a></li>
-            <li><a href="#">スクリーニング</a></li>
-            <li><a href="#">ITツール</a></li>
-            <li><a href="#">イベント・学校行事</a></li>
-            <li><a href="#">進路サポート</a></li>
-            <li><a href="#">在校生の声</a></li>
-            <li><a href="#">保護者の声</a></li>
-            <li><a href="#">学校関係者・著名人からのメッセージ</a></li>
-            <li><a href="#">制服紹介</a></li>
-            <li><a href="#">キャンパス</a></li>
-            <li><a href="#">動画一覧</a></li>
-            <li><a href="#">校歌</a></li>
-            <li><a href="#">学費</a></li>
-            <li><a href="#">生徒の進路・活動実績、アンケート調査</a></li>
-          </ul>
-        </div>
-        <div class="footer-column3">
-          <p><a href="#">ネットコース</a></p>
-          <ul>
-            <li><a href="#">ネット学習</a></li>
-            <li><a href="#">ネットコース特進先行</a></li>
-            <li><a href="#">担任サポート</a></li>
-            <li><a href="#">ネットコース生の1日</a></li>
-            <li><a href="#">学費(ネットコース)</a></li>
-          </ul>
-          <p class="club-title"><a href="#">ネット部活</a></p>
-          <ul class="club">
-            <li><a href="#">投資部</a></li>
-            <li><a href="#">起業部</a></li>
-            <li><a href="#">政治部</a></li>
-            <li><a href="#">eスポーツ部</a></li>
-            <li><a href="#">ダンス部</a></li>
-            <li><a href="#">その他多数</a></li>
-          </ul>
-        </div>
-        <div class="footer-column4">
-          <p><a href="#">通学コース</a></p>
-          <ul>
-            <li><a href="#">本科クラス</a></li>
-            <li><a href="#">プログラミング クラス</a></li>
-            <li><a href="#">学びコーチング</a></li>
-            <li><a href="#">プロジェクトN</a></li>
-            <li><a href="#">カリキュラム</a></li>
-            <li><a href="#">アクティブラーナー制度</a></li>
-            <li><a href="#">プログラミング</a></li>
-            <li><a href="#">大学受験</a></li>
-            <li><a href="#">外国語</a></li>
-            <li><a href="#">中学復習授業</a></li>
-            <li><a href="#">高卒資格取得</a></li>
-            <li><a href="#">進路サポート</a></li>
-            <li><a href="#">TA(ティーチングアシスタント)</a></li>
-            <li><a href="#">教材</a></li>
-            <li><a href="#">進学キャンパス</a></li>
-            <li><a href="#">イベント・学校行事</a></li>
-            <li><a href="#">進学コース生の一日</a></li>
-            <li><a href="#">学費(通学コース)</a></li>
-            <li><a href="#">学生寮</a></li>
-          </ul>
-        </div>
-        <div class="footer-column5">
-          <p><a href="#">提携スクール</a></p>
-          <ul>
-            <li><a href="#">スタンフォード大学</a></li>
-            <li><a href="#">オックスフォード大学k</a></li>
-            <li><a href="#">バンタンテックフォードアカデミー</a></li>
-            <li><a href="#">バンタン高等学院</a></li>
-            <li><a href="#">ASO高等部</a></li>
-            <li><a href="#">EXPG高等学院</a></li>
-          </ul>
-        </div>
-        <ul>
-          <li><a href="#">入学案内</a></li>
-          <li><a href="#">WEB出願</a></li>
-          <li><a href="#">キャンパス</a></li>
-          <li><a href="#">ニュース・トピック</a></li>
-          <li><a href="#">N高ブログ</a></li>
-          <li><a href="#">掲載実績</a></li>
-          <li><a href="#">書籍実績</a></li>
-          <li><a href="#">よくある質問</a></li>
-          <li><a href="#">通信制高校について</a></li>
-          <li><a href="#">特別奨学生募集</a></li>
-          <li><a href="#">教職員採用</a></li>
-          <li><a href="#">制作・開発採用<br>
-          (ドワンゴサイトへ)</a></li>
-          <li class="contact"><a href="#">お問い合わせ</a></li>
-          <li><a href="#">報道関係者の方へ</a></li>
-          <li><a href="#">インターンシップ(企業様)</a></li>
-          <li><a href="#">卒業された方へ</a></li>
-        </ul>
+        <div class="columns">
+          <div class="footer-column footer-column1">
+            <p><a href="#"><span class="ruby">アドバンスドプログラム</span><br>
+            Advanced Program</a></p>
+            <ul>
+              <li><a href="#">大学受験対策</a></li>
+              <li><a href="#">プログラミング</a></li>
+              <li><a href="#">クリエイティブ・エンタテインメント</a></li>
+              <li><a href="#">Vamtan FILIP CHANNEL</a></li>
+              <li><a href="#">WEBデザイン</a></li>
+              <li><a href="#">機械学習</a></li>
+              <li><a href="#">中学復習</a></li>
+              <li><a href="#">職業体験</a></li>
+              <li><a href="#">N高マイプロジェクト</a></li>
+              <li><a href="#">海外大学交際教養</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p><a href="#">N高について</a></p>
+            <ul>
+              <li><a href="#">5分でわかるN高</a></li>
+              <li><a href="#">高校卒業資格取得について</a></li>
+              <li><a href="#">スクリーニング</a></li>
+              <li><a href="#">ITツール</a></li>
+              <li><a href="#">イベント・学校行事</a></li>
+              <li><a href="#">進路サポート</a></li>
+              <li><a href="#">在校生の声</a></li>
+              <li><a href="#">保護者の声</a></li>
+              <li><a href="#">学校関係者・著名人からのメッセージ</a></li>
+              <li><a href="#">制服紹介</a></li>
+              <li><a href="#">キャンパス</a></li>
+              <li><a href="#">動画一覧</a></li>
+              <li><a href="#">校歌</a></li>
+              <li><a href="#">学費</a></li>
+              <li><a href="#">生徒の進路・活動実績、アンケート調査</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p><a href="#">ネットコース</a></p>
+            <ul>
+              <li><a href="#">ネット学習</a></li>
+              <li><a href="#">ネットコース特進先行</a></li>
+              <li><a href="#">担任サポート</a></li>
+              <li><a href="#">ネットコース生の1日</a></li>
+              <li><a href="#">学費(ネットコース)</a></li>
+            </ul>
+            <p class="club-title"><a href="#">ネット部活</a></p>
+            <ul class="club">
+              <li><a href="#">投資部</a></li>
+              <li><a href="#">起業部</a></li>
+              <li><a href="#">政治部</a></li>
+              <li><a href="#">eスポーツ部</a></li>
+              <li><a href="#">ダンス部</a></li>
+              <li><a href="#">その他多数</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p><a href="#">通学コース</a></p>
+            <ul>
+              <li><a href="#">本科クラス</a></li>
+              <li><a href="#">プログラミング クラス</a></li>
+              <li><a href="#">学びコーチング</a></li>
+              <li><a href="#">プロジェクトN</a></li>
+              <li><a href="#">カリキュラム</a></li>
+              <li><a href="#">アクティブラーナー制度</a></li>
+              <li><a href="#">プログラミング</a></li>
+              <li><a href="#">大学受験</a></li>
+              <li><a href="#">外国語</a></li>
+              <li><a href="#">中学復習授業</a></li>
+              <li><a href="#">高卒資格取得</a></li>
+              <li><a href="#">進路サポート</a></li>
+              <li><a href="#">TA(ティーチングアシスタント)</a></li>
+              <li><a href="#">教材</a></li>
+              <li><a href="#">進学キャンパス</a></li>
+              <li><a href="#">イベント・学校行事</a></li>
+              <li><a href="#">進学コース生の一日</a></li>
+              <li><a href="#">学費(通学コース)</a></li>
+              <li><a href="#">学生寮</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="last"><a href="#">提携スクール</a></p>
+            <ul>
+              <li><a href="#">スタンフォード大学</a></li>
+              <li><a href="#">オックスフォード大学k</a></li>
+              <li><a href="#">バンタンテックフォードアカデミー</a></li>
+              <li><a href="#">バンタン高等学院</a></li>
+              <li><a href="#">ASO高等部</a></li>
+              <li><a href="#">EXPG高等学院</a></li>
+            </ul>
+            <ul class="guide">
+              <li><a href="#">入学案内</a></li>
+              <li><a href="#">WEB出願</a></li>
+              <li><a href="#">キャンパス</a></li>
+              <li><a href="#">ニュース・トピック</a></li>
+              <li><a href="#">N高ブログ</a></li>
+              <li><a href="#">掲載実績</a></li>
+              <li><a href="#">書籍実績</a></li>
+              <li><a href="#">よくある質問</a></li>
+              <li><a href="#">通信制高校について</a></li>
+              <li><a href="#">特別奨学生募集</a></li>
+              <li><a href="#">教職員採用</a></li>
+              <li><a href="#">制作・開発採用<br>
+              (ドワンゴサイトへ)</a></li>
+              <li class="contact"><a href="#">お問い合わせ</a></li>
+              <li><a href="#">報道関係者の方へ</a></li>
+              <li><a href="#">インターンシップ(企業様)</a></li>
+              <li><a href="#">卒業された方へ</a></li>
+            </ul>
+          </div>
+        </div><!-- columns -->
       </div><!-- footer-container -->
       <div class="footer-sub">
         <ul>
           <li><a href="#">個人情報保護方針</a></li>
           <li><a href="#">学校法人概要</a></li>
         </ul>
-        <ul>
+        <ul class="sns">
           <li><a href="#"><img src="images/icon_twitter01.png" alt="twitter"><p>N高等学校公式<br>
           twitter</p></a></li>
           <li><a href="#"><img src="images/icon_facebook01.png" alt="facebook"><p>N高等学校公式<br>
@@ -609,12 +661,14 @@
           <li><a href="#"><img src="images/icon_youtube01.png" alt="YouTube"><p>N高等学校公式<br>
           YouTubeチャンネル</p></a></li>
         </ul>
+        <div class="footer-bottom">
+          <div class="footer-bottom-wrapper">
+            <p><a href="#">N高等学校：ホーム</a></p>
+            <small>&copy;KADOKAWA DOWANGO educational institute</small>
+          </div>
+        </div>
       </div><!-- footer-sub -->
     </div><!-- footer-inner -->
-    <div class="footer-bottom">
-      <p><a href="#">N高等学校：ホーム</a></p>
-      <small>&copy;KADOKAWA DOWANGO educational institute</small>
-    </div>
   </footer>
 </body>
 </html>
