@@ -58,7 +58,6 @@ nav,.menu{
 .reverse{
   display:flex;
   flex-flow:row wrap;
-  display:column;
 }
 .key-visual{
   order:2;
@@ -135,6 +134,7 @@ nav,.menu{
     display:flex;
     color:#666;
     font-size:0.7rem;
+    margin:0 0 0 auto;
   }
   .header-top-wrapper li:last-child{
     background:#d9d9d9;
@@ -179,7 +179,7 @@ nav,.menu{
     display:flex;
     justify-content:space-between;
     padding:20px 0;
-                                      background:#fff;
+    background:#fff;
   }
   .header-main .small-img{
     display:none;
@@ -1298,7 +1298,6 @@ nav,.menu{
   }
   .footer-sub .sns{
     display:flex;
-    display:row;
     order:2;
     justify-content:flex-end;
     flex-basis:0%;
